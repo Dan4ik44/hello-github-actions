@@ -1,17 +1,17 @@
-имя : " Hello Actions "
- описание : " Приветствуйте кого-нибудь "
- автор : " octocat@github.com "
+name: "Hello Actions"
+description: "Greet someone"
+author: "octocat@github.com"
 
-input :
-   MY_NAME :
-     description : " Кого приветствовать "
-     обязательно : true по 
-    умолчанию : " World "
+inputs:
+  MY_NAME:
+    description: "Who to greet"
+    required: true
+    default: "World"
 
-запускается :
-   using : " docker "
-   образ : " Dockerfile "
+runs:
+  using: "docker"
+  image: "Dockerfile"
 
-брендинг :
-   значок : " микрофон "
-   цвет : " фиолетовый "
+branding:
+  icon: "mic"
+  color: "purple"
